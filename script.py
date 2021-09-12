@@ -3,23 +3,19 @@ class Script(object):
     START_MSG = """<b>Hy {},
 
 I'm an advanced filter bot with many capabilities!
-There is no practical limits for my filtering capacity :)
+There is no practical limits for my filtering capacity 😌</b>
 
-See <i>/help</i> for commands and more details.</b>
 """
 
 
     HELP_MSG = """
-<i>Add me as admin in your group and start filtering :)</i>
+<i>I can't help you</i>
 
 
 <b>Basic Commands;</b>
 
 /start - Check if I'm alive!
 /help - Command help
-/about - Something about me!
-
-
 <b>Filter Commands;</b>
 
 <code>/add name reply</code>  -  Add filter for name
@@ -48,13 +44,13 @@ See <i>/help</i> for commands and more details.</b>
 <code>/info userid</code>  -  Shows User Information. Use <code>/info</code> as reply to some message for their details!
 
 
-<b>© @TroJanzHEX</b>
+<b>© @InfameSeries</b>
 """
 
 
-    ABOUT_MSG = """⭕️<b>My Name : TroJanz Filter Bot</b>
+    ABOUT_MSG = """⭕️<b>My Name :Filter Bot</b>
 
-⭕️<b>Creater :</b> @TroJanzHEX    
+⭕️<b>Creater :</b> @InfameMovies  
 
 ⭕️<b>Language :</b> <code>Python3</code>
 
