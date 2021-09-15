@@ -338,12 +338,11 @@ async def give_filter(client,message):
                             await message.reply_text(reply_text, reply_markup=reply_markup, disable_web_page_preview=True)
                         else:
                             button = eval(btn)
-                            reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("SHARE", url ="https://t.me/share/url?url=https://t.me/InfameSeries")]])
+                            button = InlineKeyboardMarkup([[InlineKeyboardButton("SHARE", url ="https://t.me/share/url?url=https://t.me/InfameSeries")]])
                             await message.reply_text(
                                 reply_text,
                                 disable_web_page_preview=True,
-                                reply_markup=InlineKeyboardMarkup(button),
-                                reply_markup=reply_markup
+                                reply_markup=InlineKeyboardMarkup(button)
                             )
                     else:
                         if btn == "[]":
@@ -353,12 +352,12 @@ async def give_filter(client,message):
                             )
                         else:
                             button = eval(btn) 
-                            reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("SHARE", url ="https://t.me/share/url?url=https://t.me/InfameSeries")]])
+                            button = InlineKeyboardMarkup([[InlineKeyboardButton("SHARE", url ="https://t.me/share/url?url=https://t.me/InfameSeries")]])
                             await message.reply_cached_media(
                                 fileid,
                                 caption=reply_text or "",
-                                reply_markup=InlineKeyboardMarkup(button),
-                                reply_markup=reply_markup
+                                reply_markup=InlineKeyboardMarkup(button)
+                               
                             )
                 except Exception as e:
                     print(e)
