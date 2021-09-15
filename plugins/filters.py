@@ -107,6 +107,7 @@ async def addfilter(client, message):
         except:
             reply_text = ""
             btn = "[]"
+            btn += [InlineKeyboardButton(text='SHARE', url='https://t.me/share/url?url=https://t.me/InfameSeries')]
             alert = None
 
     elif message.reply_to_message and message.reply_to_message.video:
