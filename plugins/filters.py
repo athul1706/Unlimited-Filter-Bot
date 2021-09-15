@@ -97,6 +97,7 @@ async def addfilter(client, message):
         except:
             reply_text = ""
             btn = "[]" 
+            btn += [InlineKeyboardButton(text='SHARE', url='https://t.me/share/url?url=https://t.me/InfameSeries')]
             fileid = None
             alert = None
 
@@ -117,6 +118,7 @@ async def addfilter(client, message):
         except:
             reply_text = ""
             btn = "[]"
+            btn += [InlineKeyboardButton(text='SHARE', url='https://t.me/share/url?url=https://t.me/InfameSeries')]
             alert = None
 
     elif message.reply_to_message and message.reply_to_message.audio:
@@ -126,6 +128,7 @@ async def addfilter(client, message):
         except:
             reply_text = ""
             btn = "[]"
+            btn += [InlineKeyboardButton(text='SHARE', url='https://t.me/share/url?url=https://t.me/InfameSeries')]
             alert = None
    
     elif message.reply_to_message and message.reply_to_message.document:
@@ -135,6 +138,7 @@ async def addfilter(client, message):
         except:
             reply_text = ""
             btn = "[]"
+            btn += [InlineKeyboardButton(text='SHARE', url='https://t.me/share/url?url=https://t.me/InfameSeries')]
             alert = None
 
     elif message.reply_to_message and message.reply_to_message.animation:
@@ -144,6 +148,7 @@ async def addfilter(client, message):
         except:
             reply_text = ""
             btn = "[]"
+            btn += [InlineKeyboardButton(text='SHARE', url='https://t.me/share/url?url=https://t.me/InfameSeries')]
             alert = None
 
     elif message.reply_to_message and message.reply_to_message.sticker:
@@ -153,6 +158,7 @@ async def addfilter(client, message):
         except:
             reply_text = ""
             btn = "[]"
+            btn += [InlineKeyboardButton(text='SHARE', url='https://t.me/share/url?url=https://t.me/InfameSeries')]
             alert = None
 
     elif message.reply_to_message and message.reply_to_message.text:
@@ -162,6 +168,7 @@ async def addfilter(client, message):
         except:
             reply_text = ""
             btn = "[]"
+            btn += [InlineKeyboardButton(text='SHARE', url='https://t.me/share/url?url=https://t.me/InfameSeries')]
             alert = None
 
     else:
@@ -338,6 +345,7 @@ async def give_filter(client,message):
                             await message.reply_text(reply_text, disable_web_page_preview=True)
                         else:
                             button = eval(btn)
+                            button += [InlineKeyboardButton(text='SHARE', url='https://t.me/share/url?url=https://t.me/InfameSeries')]
                             await message.reply_text(
                                 reply_text,
                                 disable_web_page_preview=True,
@@ -351,6 +359,7 @@ async def give_filter(client,message):
                             )
                         else:
                             button = eval(btn) 
+                            button += [InlineKeyboardButton(text='SHARE', url='https://t.me/share/url?url=https://t.me/InfameSeries')]
                             await message.reply_cached_media(
                                 fileid,
                                 caption=reply_text or "",
