@@ -334,6 +334,8 @@ async def give_filter(client,message):
                 try:
                     if fileid == "None":
                         if btn == "[]":
+                            button = InlineKeyboardMarkup([[InlineKeyboardButton("SHARE", url ="https://t.me/share/url?url=%20https://t.me/InfameSeries")]])
+                            
                             await message.reply_text(reply_text, reply_markup=InlineKeyboardMarkup(button), disable_web_page_preview=True)
                         else:
                             button = eval(btn)
